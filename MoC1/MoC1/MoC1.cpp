@@ -20,6 +20,14 @@ double P_C(int c,int table[20][20],double P_m[20],double P_k[20]) {
     return res;
 }
 
+double P_M_C(int c,int M, int table[20][20], double P_m[20], double P_k[20]) {
+    double res = 0;
+    for (int i = 0; i < 20; i++) {
+        if (table[i][M] == c)res += P_m[M] * P_k[i];
+    }
+    return res;
+}
+
 
 
 
@@ -127,6 +135,27 @@ int main() {
 
     cout << "P(M,C):" << endl;
 
+    double P_m_c[20][20];
+    for (int i = 0; i < 20; i++) {
+        for (int j = 0; j < 20; j++) {
+            P_m_c[i][j] = P_M_C(i, j, table, P_M, P_K);
+            cout << P_m_c[i][j] << " ";
+        }
+        cout << endl;
+
+    }
+    cout << endl;
+
+    cout << "P(M|C): " << endl;
+    double P_mc[20][20];
+    for (int i = 0; i < 20; i++) {
+        for (int j = 0; j < 20; j++) {
+            P_mc[i][j] = P_m_c[i][j] / P_c[j];
+            cout << P_mc[i][j] << " ";
+        }
+        cout << endl;
+
+    }
 
 
 }
