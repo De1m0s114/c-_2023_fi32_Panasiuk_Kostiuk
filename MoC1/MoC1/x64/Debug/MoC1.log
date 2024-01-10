@@ -1,2 +1,4 @@
 ﻿  MoC1.cpp
+Y:\ 9 семестр\MoC\c-_2023_fi32_Panasiuk_Kostiuk\MoC1\MoC1\MoC1.cpp(101,26): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+Y:\ 9 семестр\MoC\c-_2023_fi32_Panasiuk_Kostiuk\MoC1\MoC1\MoC1.cpp(210,31): warning C4244: =: преобразование "double" в "float", возможна потеря данных
   MoC1.vcxproj -> Y:\ 9 семестр\MoC\c-_2023_fi32_Panasiuk_Kostiuk\MoC1\x64\Debug\MoC1.exe
